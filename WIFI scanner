@@ -1,4 +1,4 @@
-from scapy.all import *
+from scapy.all import Dot11,Dot11Beacon,Dot11Elt, sniff
 from threading import Thread 
 import pandas
 import time 
