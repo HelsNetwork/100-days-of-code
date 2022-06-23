@@ -1,0 +1,7 @@
+black
+requests
+beautifulsoup4
+scapy
+discord
+flask
+selenium

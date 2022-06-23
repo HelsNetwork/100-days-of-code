@@ -1,8 +1,9 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
-import time 
+import time
 
 host = "local host"
 port = 8080
+
 
 class server(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -11,6 +12,7 @@ class server(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(bytes("<p> Hello World.</p>", "utf-8"))
         self.wfile.write(bytes("</body></html>", "utf-8"))
+
 
 if __name__ == "__main__":
     webServer = HTTPServer((host, port), server)
